@@ -5,8 +5,8 @@
 
 ```bash
 # clone the repository
-git clone <your-repo-url>
-cd dashboard_widgets
+git clone git@github.com:sudobyNM/dashboard-widgets.git
+cd dashboard-widgets
 
 # install dependencies
 npm install
