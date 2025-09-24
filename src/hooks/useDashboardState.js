@@ -1,8 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 
 // A small, hand-rolled state manager for the dashboard.
-// - Loads initial data (and any persisted snapshot)
-// - Exposes helpers to open the add modal, add/remove widgets, and search
 // - Persists to localStorage so a page refresh keeps the layout
 export default function useDashboardState(seed) {
   const STORAGE_KEY = 'dashboard_state';
@@ -21,8 +19,7 @@ export default function useDashboardState(seed) {
 
   const [query, setQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState(null);
-
-  // Save a lightweight snapshot. Keeping it tiny keeps it resilient.
+  //lightweight snapshot. Keeping it tiny keeps it resilient.
   useEffect(() => {
     const snapshot = { categories, catalog: widgetCatalog };
     localStorage.setItem(STORAGE_KEY, JSON.stringify(snapshot));

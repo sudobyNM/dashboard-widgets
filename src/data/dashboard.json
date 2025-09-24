@@ -20,8 +20,8 @@
         { "name": "Passed", "value": 7253, "color": "#4CAF50" }
       ]
     },
-    { "id": "ns-specific-alerts", "name": "Top 5 Namespace Specific Alerts", "image": "src/assets/bars.png", "text": "No graph data available", "tags": ["cwpp", "alerts"] },
-    { "id": "workload-alerts", "name": "Workload Alerts", "image": "src/assets/bars.png", "text": "No graph data available", "tags": ["cwpp", "workload"] },
+    { "id": "ns-specific-alerts", "name": "Top 5 Namespace Specific Alerts", "image": "public/assets/bars.png", "text": "No graph data available", "tags": ["cwpp", "alerts"] },
+    { "id": "workload-alerts", "name": "Workload Alerts", "image": "public/assets/bars.png", "text": "No graph data available", "tags": ["cwpp", "workload"] },
     { "id": "image-risk", "name": "Image Risk Assessment",  "text": "1470 total vulnerabilities", "tags": ["registry", "risk"] },
     { "id": "image-security-issues", "name": "Image Security Issues",   "text": "12 total images scanned", "tags": ["registry", "security"] }
   ],

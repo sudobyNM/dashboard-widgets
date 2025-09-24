@@ -128,7 +128,7 @@ function WidgetCard({ widget, onRemove }) {
         {!hasChartData && (widget.text ? (
           // if text is provided, show image and text
           <div style={{ textAlign: 'center', padding: '10px' }}>
-            <img src="./src/assets/bars.png" alt="bar chart"  style={{ width: '64px', height: '60px' }} />
+            <img src="./public/assets/bars.png" alt="bar chart"  style={{ width: '64px', height: '60px' }} />
             <p className="widget-card__text">{widget.text}</p>
           </div>) : (
 
