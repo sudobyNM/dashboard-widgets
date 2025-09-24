@@ -1,0 +1,15 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.5;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { margin: 0; background: #f1f5f9; }
+
+/* App container */
+.app { max-width: 1180px; margin: 0 auto; background: #fff; min-height: 100%; box-shadow: 0 0 0 1px #e5e7eb inset; }
+
+.header h1, .header h2, .header h3, .header h4, .header h5, .header h6 {
+  margin: 0;
+}

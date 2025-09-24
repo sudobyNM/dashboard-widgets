@@ -1,0 +1,45 @@
+{
+  "catalog": [
+     {
+      "id": "cloud-accounts",
+      "name": "Cloud Accounts",
+      "type": "pie",
+      "data": [
+        { "name": "Connected", "value": 1, "color": "#4074ed" },
+        { "name": "Not Connected", "value": 1, "color": "#e1e9fc" }
+      ]
+    },
+    {
+      "id": "cloud-risk-assessment",
+      "name": "Cloud Account Risk Assessment",
+      "type": "pie",
+      "data": [
+        { "name": "Failed", "value": 1689, "color": "#F44336" },
+        { "name": "Warning", "value": 681, "color": "#FF9800" },
+        { "name": "Not Available", "value": 36, "color": "#9E9E9E" },
+        { "name": "Passed", "value": 7253, "color": "#4CAF50" }
+      ]
+    },
+    { "id": "ns-specific-alerts", "name": "Top 5 Namespace Specific Alerts", "image": "src/assets/bars.png", "text": "No graph data available", "tags": ["cwpp", "alerts"] },
+    { "id": "workload-alerts", "name": "Workload Alerts", "image": "src/assets/bars.png", "text": "No graph data available", "tags": ["cwpp", "workload"] },
+    { "id": "image-risk", "name": "Image Risk Assessment",  "text": "1470 total vulnerabilities", "tags": ["registry", "risk"] },
+    { "id": "image-security-issues", "name": "Image Security Issues",   "text": "12 total images scanned", "tags": ["registry", "security"] }
+  ],
+  "categories": [
+    {
+      "id": "cspm-exec",
+      "name": "CSPM Executive Dashboard",
+      "widgets": ["cloud-accounts", "cloud-risk-assessment"]
+    },
+    {
+      "id": "cwpp",
+      "name": "CWPP Dashboard",
+      "widgets": ["ns-specific-alerts", "workload-alerts"]
+    },
+    {
+      "id": "registry",
+      "name": "Registry Scan",
+      "widgets": ["image-risk", "image-security-issues"]
+    }
+  ]
+}
